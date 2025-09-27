@@ -1,0 +1,131 @@
+:root {
+  /* Colors: */
+  --clr-purple-950: #301534;
+  --clr-purple-600: #8b6990;
+  --clr-purple-100: #f8eeff;
+  --clr-violet-600: #ad28eb;
+
+  /* Semantic colors */
+  --clr-attribution: #3e52a3;
+
+  /* Font sizes (in rem) */
+  --fs-sm: 0.75rem; /* 12px */
+  --fs-md: 1rem; /* 16px body text */
+  --fs-lg: 1.125rem; /* 18px */
+  --fs-xl: 3.5rem; /* 56px  */
+
+  /* Spacing scale (rem) */
+  --space-xl: 1.5rem; /* 24px */
+  --space-2xl: 2rem; /* 32px */
+  --space-3xl: 2.5rem; /* 40px */
+
+  /* Border-radius scale */
+  --radius-card: 1rem; /* 16px */
+  --radius-circle: 50%; /* circular elements */
+
+  /* Line heights */
+  --lh-base: 1.5; /* 24px lh at 16px fs */
+  --lh-heading: 1.17; /* 21px lh at 18px fs */
+  --lh-title: 1.18; /* 66px lh at 56px fs */
+}
+
+/* 
+********************************
+SELF-HOSTING FONT:
+********************************
+*/
+
+/* VARIABLE FONT: */
+@font-face {
+  font-family: "Work Sans";
+  src: url("/assets/fonts/WorkSans-VariableFont_wght.woff2")
+      format("woff2-variations"),
+    url("/assets/fonts/WorkSans-VariableFont_wght.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 
+********************************
+GLOBAL CSS VALUES:
+********************************
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  line-height: var(--lh-heading);
+  letter-spacing: 0;
+
+  color: var(--clr-purple-950);
+
+  background-color: var(--clr-purple-100);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 
+********************************
+MAIN:
+********************************
+*/
+
+/* 
+********************************
+FOOTER:
+********************************
+*/
+
+/*UPDATE VALUES!*/
+.attribution {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+
+  font-size: var(--fs-sm);
+  color: var(--clr-attribution);
+}
+
+/* LINKS */
+/* Default State */
+.attribution a:link {
+  color: var(--clr-attribution);
+  text-decoration: none;
+}
+
+/* Visited State */
+.attribution a:visited {
+  color: var(--clr-attribution);
+}
+
+/* State On Hover / Whilst being clicked */
+.attribution a:hover,
+.attribution a:active {
+  opacity: 75%;
+}
+
+/* 
+********************************
+UTILITY CLASSES:
+********************************
+*/
