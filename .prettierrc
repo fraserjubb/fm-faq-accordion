@@ -1,13 +1,14 @@
 {
-  "singleQuote": false,
+  "singleQuote": true,
   "arrowParens": "avoid",
 
   "overrides": [
     {
-      "files": "index.html",
+      "files": "*.html",
       "options": {
         "printWidth": 250
       }
     }
   ]
 }
+
