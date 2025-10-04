@@ -96,18 +96,44 @@ MAIN:
 ********************************
 */
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: calc((100vh - 35.3125rem) / 2);
 }
 
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+} */
+
 .faq-card {
+  max-width: 600px;
+  width: 100%;
+  padding: var(--space-3xl);
+
+  background-color: white;
+  border-radius: var(--radius-card);
+  box-shadow: 0px 32px 56px 0px rgba(81, 0, 118, 0.1);
 }
 
 .faq-card--active {
 }
 
 .faq-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
 }
 
 .faq-card__logo {
+  width: 40px;
+  height: 40px;
 }
 
 .faq-card__title {
@@ -117,24 +143,42 @@ MAIN:
 }
 
 .faq-card__list {
+  list-style: none;
 }
 
 .faq-card__list-item {
 }
 
 .faq-card__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xl);
+}
+
+.faq-card__question:hover {
+  cursor: pointer;
+  color: var(--clr-violet-600);
+}
+
+.faq-card__list-item:last-of-type .faq-card__question,
+.faq-card__list-item:last-of-type .faq-card__answer {
+  margin-bottom: 0;
 }
 
 .faq-card__question-text {
 }
 
 .faq-card__question-logo {
+  width: 30px;
+  height: 30px;
 }
 
 .faq-card__answer {
   font-size: var(--fs-md);
   font-weight: var(--fw-regular);
   line-height: var(--lh-base);
+  margin-bottom: var(--space-xl);
 
   color: var(--clr-purple-600);
 }
@@ -142,52 +186,13 @@ MAIN:
 .faq-card__answer--visible {
 }
 
-.faq-card__list-item {
-}
+.faq-card__line-decoration {
+  max-width: 520px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-purple-100);
 
-.faq-card__question {
-}
-
-.faq-card__question-text {
-}
-
-.faq-card__question-logo {
-}
-
-.faq-card__answer {
-}
-
-.faq-card__list-item {
-}
-
-.faq-card__question {
-}
-
-.faq-card__question-text {
-}
-
-.faq-card__question-logo {
-}
-
-.faq-card__answer {
-}
-
-.faq-card__list-item {
-}
-
-.faq-card__question {
-}
-
-.faq-card__question-text {
-}
-
-.faq-card__question-logo {
-}
-
-.faq-card__answer {
-}
-
-.attribution {
+  margin-bottom: var(--space-xl);
 }
 
 /* 
