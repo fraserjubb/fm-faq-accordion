@@ -103,6 +103,18 @@ MAIN:
   padding-top: calc((100vh - 35.3125rem) / 2);
 }
 
+.container::before {
+  content: '';
+  background-image: url(/assets/images/background-pattern-desktop.svg);
+  background-size: cover;
+  height: 33vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
 /* .container {
   display: flex;
   justify-content: center;
