@@ -1,3 +1,32 @@
-.attribution {
-  margin-top: var(--40px);
+@media (max-width: 650px) {
+  :root {
+    --fs-md: 0.875rem; /* 14px */
+    --fs-lg: 1rem; /* 16px */
+    --fs-xl: 2rem; /* 32px  */
+
+    --radius-card: 0.5rem; /* 8px */
+  }
+
+  .container::before {
+    background-image: url(/assets/images/background-pattern-mobile.svg);
+    height: 27.5vh;
+  }
+
+  .faq-card {
+    max-width: 327px;
+    padding: var(--space-xl);
+  }
+
+  .faq-card__header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .faq-card__logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .attribution {
+    margin-top: var(--space-xl);
+  }
 }
