@@ -40,22 +40,19 @@ This is a solution to [this challenge on Frontend Mentor](https://www.frontendme
 
 In this particular project:
 
-1.
+1. `querySelector` work on any element, not just `document`.
 
-```css
-[INSERT ANY CODE HERE]
-```
+2. This was my first time where I reversed engineered a component on an existing website to understand how it worked, so that I could then incorporate my own version into my own project. In this case I used the FAQ Accordion on frontendmentor.io. By examining it in the the console, I learned about the `details` element and how it has an `open` attribute. And then through the mdn documentation and chatGPT, I learned about the `toggle` event in javaScript.
 
 ### Continued Development
 
 After submitting this project, I wish to develop the following:
 
-1. [INSERT TEXT HERE]
+1. Get more comfortable writing event listeners.
 
 ### Useful Resources
 
 - Nothing of note used for this project.
-- [[INSERT TEXT TO APPEAR HERE] ([SPECIFY MEDIA TYPE HERE])](link) - [DESCRIPTION OF HOW IT HELPED HERE]
 
 ## Noteworthy Updates Since Initial Submission
 
