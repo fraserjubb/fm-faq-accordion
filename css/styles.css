@@ -171,6 +171,10 @@ MAIN:
   margin-bottom: 0;
 }
 
+.faq-card__list-item:last-of-type .faq-card__answer {
+  margin-top: var(--space-xl);
+}
+
 .faq-card__question-text {
 }
 
