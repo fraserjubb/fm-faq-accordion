@@ -126,9 +126,6 @@ MAIN:
   box-shadow: 0px 32px 56px 0px rgba(81, 0, 118, 0.1);
 }
 
-.faq-card--active {
-}
-
 .faq-card__header {
   display: flex;
   align-items: center;
@@ -149,9 +146,6 @@ MAIN:
 
 .faq-card__list {
   list-style: none;
-}
-
-.faq-card__list-item {
 }
 
 .faq-card__question {
@@ -175,9 +169,6 @@ MAIN:
   margin-top: var(--space-xl);
 }
 
-.faq-card__question-text {
-}
-
 .faq-card__question-logo {
   width: 30px;
   height: 30px;
@@ -190,9 +181,6 @@ MAIN:
   margin-bottom: var(--space-xl);
 
   color: var(--clr-purple-600);
-}
-
-.faq-card__answer--visible {
 }
 
 .faq-card__line-decoration {
@@ -236,9 +224,3 @@ FOOTER:
 .attribution a:active {
   opacity: 75%;
 }
-
-/* 
-********************************
-UTILITY CLASSES:
-********************************
-*/
